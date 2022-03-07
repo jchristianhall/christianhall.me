@@ -45,3 +45,4 @@ yarn-error.log
 .Trashes
 ._*
 .Spotlight-V100
+.vercel
