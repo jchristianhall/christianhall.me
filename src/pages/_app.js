@@ -1,5 +1,5 @@
-import "./global.css"
-import Head from "next/head"
+import './global.css'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }) {
   const gosquaredSnippet = `!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
@@ -13,14 +13,14 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV === 'production' && (
           <script
             key="gosquared"
             dangerouslySetInnerHTML={{ __html: gosquaredSnippet }}
           />
         )}
         <link
-          href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+          href="https://fonts.googleapis.com/css?family=Josefin%20Sans&display=swap"
           rel="stylesheet"
         ></link>
       </Head>

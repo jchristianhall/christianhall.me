@@ -10,11 +10,11 @@ function Home() {
 
       <div className="Home-content">
         <h1 className="Home-name">Christian Hall</h1>
-        <h2 className="Home-byline">Software Engineer</h2>
+        <h2 className="Home-byline">Senior Software Engineer</h2>
 
         <p className="Home-bio">
-          Christian is a software engineer who cares deeply for usable designs
-          and sustainable development.
+          Christian is a product-oriented software engineer who cares deeply for
+          usable designs and sustainable development.
         </p>
 
         <div className="Home-links">
