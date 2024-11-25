@@ -1,4 +1,4 @@
-import { FileUser } from "lucide-react"
+import { FileUser } from 'lucide-react'
 import BlueskyIcon from '../images/bluesky.svg'
 import GithubIcon from '../images/github.svg'
 
@@ -17,20 +17,34 @@ function Home() {
         <h2 className="Home-byline">Product Engineer</h2>
 
         <p className="Home-bio">
-          I’m a product-oriented software engineer who cares deeply for
-          usable designs and sustainable development. Let’s build something
-          together.
+          I’m a product-oriented software engineer who cares deeply for usable
+          designs and sustainable development. Let’s build something together.
         </p>
 
         <div className="Home-links">
           <a href="/Christian Hall Resume.pdf" className="Home-link">
-            <FileUser alt="Resume" color="currentColor" size={24} />
+            <div role="img" aria-label="Resume">
+              <FileUser color="currentColor" size={24} />
+            </div>
           </a>
-          <a href="https://bsky.app/profile/christianhall.dev" className="Home-link">
-            <BlueskyIcon alt="Bluesky" width={24} height={24} color="currentColor" />
+          <a
+            href="https://bsky.app/profile/christianhall.dev"
+            className="Home-link"
+          >
+            <BlueskyIcon
+              alt="Bluesky"
+              width={24}
+              height={24}
+              color="currentColor"
+            />
           </a>
           <a href="https://github.com/jchristianhall" className="Home-link">
-            <GithubIcon alt="GitHub" width={24} height={24} color="currentColor" />
+            <GithubIcon
+              alt="GitHub"
+              width={24}
+              height={24}
+              color="currentColor"
+            />
           </a>
         </div>
 
