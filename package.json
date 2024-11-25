@@ -3,12 +3,14 @@
   "description": "Christian Hall's personal site",
   "author": "Christian Hall",
   "private": true,
-  "version": "4.0.0",
+  "version": "4.0.1",
   "dependencies": {
-    "next": "^13.0.6",
+    "@svgr/webpack": "^8.1.0",
+    "lucide-react": "^0.460.0",
+    "next": "^15.0.3",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "scripts": {
     "format": "prettier --write src/**/*.{js,jsx}",
@@ -25,7 +27,7 @@
     "url": "https://github.com/jchristianhall/jchristianhall.github.io/issues"
   },
   "devDependencies": {
-    "prettier": "^2.5.1",
-    "vercel": "^28.7.2"
+    "prettier": "^3.3.3",
+    "vercel": "^39.1.1"
   }
 }
