@@ -1,10 +1,11 @@
 import { FileUser } from 'lucide-react'
 import BlueskyIcon from '../images/bluesky.svg'
 import GithubIcon from '../images/github.svg'
+import * as styles from './home.css'
 
 function Home() {
   return (
-    <main className="Home">
+    <main className={styles.home}>
       <div className="HomeBackground">
         <div className="HomeBackground-element HomeBackground-top1"></div>
         <div className="HomeBackground-element HomeBackground-top2"></div>
@@ -12,24 +13,24 @@ function Home() {
         <div className="HomeBackground-element HomeBackground-bottom2"></div>
       </div>
 
-      <div className="Home-content">
-        <h1 className="Home-name">Christian Hall</h1>
-        <h2 className="Home-byline">Product Engineer</h2>
+      <div className={styles.homeContent}>
+        <h1 className={styles.homeName}>Christian Hall</h1>
+        <h2 className={styles.homeByline}>Product Engineer</h2>
 
-        <p className="Home-bio">
+        <p className={styles.homeBio}>
           I’m a product-oriented software engineer who cares deeply for usable
           designs and sustainable development. Let’s build something together.
         </p>
 
-        <div className="Home-links">
-          <a href="/Christian Hall Resume.pdf" className="Home-link">
+        <div className={styles.homeLinks}>
+          <a href="/Christian Hall Resume.pdf" className={styles.homeLink}>
             <div role="img" aria-label="Resume">
               <FileUser color="currentColor" size={24} />
             </div>
           </a>
           <a
             href="https://bsky.app/profile/christianhall.dev"
-            className="Home-link"
+            className={styles.homeLink}
           >
             <BlueskyIcon
               alt="Bluesky"
@@ -38,7 +39,10 @@ function Home() {
               color="currentColor"
             />
           </a>
-          <a href="https://github.com/jchristianhall" className="Home-link">
+          <a
+            href="https://github.com/jchristianhall"
+            className={styles.homeLink}
+          >
             <GithubIcon
               alt="GitHub"
               width={24}
@@ -48,7 +52,7 @@ function Home() {
           </a>
         </div>
 
-        <footer className="Home-footer">
+        <footer className={styles.homeFooter}>
           Crafted in Tennessee. &copy; {new Date().getFullYear()}
         </footer>
       </div>
